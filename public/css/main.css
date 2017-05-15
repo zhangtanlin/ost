@@ -1,0 +1,147 @@
+/*修改默认样式-----------------------------------------------------------------*/
+
+html, body {
+  background-color: #fff;
+}
+
+
+/*特殊字体---------------------------------------------------------------------*/
+
+.icon {
+  width: 1em;
+  height: 1em;
+  /* 图标和文字相邻时，垂直对齐 */
+  vertical-align: -0.15em;
+  /* 通过设置 color 来改变 SVG 的颜色/fill */
+  fill: currentColor;
+  /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+       normalize.css 中也包含这行 */
+  overflow: hidden;
+}
+
+
+/*头部------------------------------------------------------------------------*/
+
+#ost_header {
+  background-color: #FF596D;
+}
+
+#ost_header a {
+  color: #fff;
+}
+
+#ost_header .mui-title {
+  font-size: 3rem;
+  color: #fff;
+}
+
+
+/*导航------------------------------------------------------------------------*/
+
+#ost_nav {}
+
+#ost_nav svg {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: .2rem;
+  font-size: 2rem;
+  display: block;
+}
+
+#ost_nav span {
+  color: #2A2A2A;
+  display: block;
+  font-size: .5rem;
+  position: relative;
+  top: -.1rem;
+}
+
+
+/*中部------------------------------------------------------------------------*/
+
+.mui-content {
+  background-color: #fff;
+}
+
+
+/*首页------------------------------------------------------------------------*/
+
+#ost_indexSubnav {
+  text-align: center;
+}
+
+#ost_indexSubnav .icon {
+  margin: 0 auto;
+  display: block;
+}
+
+#ost_indexSubnav .ost_indexSubnavIcon_sc, #ost_indexSubnav .ost_indexSubnavIcon_zk, #ost_indexSubnav .ost_indexSubnavIcon_jm, #ost_indexSubnav .ost_indexSubnavIcon_zb {
+  margin-top: 2rem;
+  font-size: 3rem;
+  border-radius: 100%;
+}
+
+.ost_indexSubnavIcon_sc {
+  -webkit-box-shadow: 0 5px 10px #E35858;
+  box-shadow: 0 5px 10px #E35858;
+}
+
+.ost_indexSubnavIcon_zk {
+  -webkit-box-shadow: 0 5px 10px #EA773E;
+  box-shadow: 0 5px 10px #EA773E;
+}
+
+.ost_indexSubnavIcon_jm {
+  -webkit-box-shadow: 0 5px 10px #F6BF58;
+  box-shadow: 0 5px 10px #F6BF58;
+}
+
+.ost_indexSubnavIcon_zb {
+  -webkit-box-shadow: 0 5px 10px #86A876;
+  box-shadow: 0 5px 10px #86A876;
+}
+
+#ost_indexSubnav .ost_indexSubnavTitle {
+  display: block;
+  font-size: 3rem;
+}
+
+#ost_indexFuli>div {
+  padding: 0 1rem;
+}
+
+#ost_indexFuli img {
+  width: 100%;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 15px #E5C4D7;
+  box-shadow: 0 0 15px #E5C4D7;
+}
+
+#ost_indexSlidMsg .mui-media-body {
+  font-size: .2rem;
+}
+
+#ost_indexSlidMsg img {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #E5C4D7;
+  box-shadow: 0 0 15px #E5C4D7;
+}
+
+
+/*登录------------------------------------------------------------------------*/
+#ost_login{
+  box-shadow: 0 0 15px #e5c4d7;
+}
+
+
+/*课堂------------------------------------------------------------------------*/
+#ost_classTab{
+  font-size: 3rem;
+  color: #fff;
+  background-color: #FF596D;
+  padding-bottom: 2px;
+}
+#ost_classTab .mui-active{
+  color: #fff;
+  border-color: #fff;
+}
