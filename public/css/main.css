@@ -145,7 +145,10 @@ html, body {
   color: #fff;
   border-color: #fff;
 }
-#ost_classFAQ img{
+#ost_classBasic{
+  padding-bottom: 50px;
+}
+#ost_classBasic img{
   width:100%;
   float: left;
 }
