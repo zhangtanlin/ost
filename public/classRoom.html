@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>课堂</title>
+  <link rel="stylesheet" href="./lib/dcloud-mui/dist/css/mui.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <script src="./lib/dcloud-mui/dist/js/mui.min.js"></script>
+  <script src="./fonts/iconfont.js"></script>
+</head>
+
+<body>
+  <div class="mui-content">
+    <!-- 选项卡 -->
+    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="ost_classTab">
+      <a class="mui-control-item mui-active" href="#ost_classFAQ">
+        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+          <use xlink:href="#icon-ost_fontChangjianwen"></use>
+        </svg>
+      </a>
+      <a class="mui-control-item" href="#ost_classBasic">
+        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+          <use xlink:href="#icon-ost_fontJichujiaoche"></use>
+        </svg>
+      </a>
+      <a class="mui-control-item" href="#ost_classAdvanc">
+        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+          <use xlink:href="#icon-ost_fontJinjiejiaoch"></use>
+        </svg>
+      </a>
+      <a class="mui-control-item" href="#ost_classLive">
+        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+          <use xlink:href="#icon-ost_fontDaketang"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- 选项卡内容 -->
+    <div class="mui-slider-group">
+      <!-- 常见问答 -->
+      <div id="ost_classFAQ" class="mui-slider-item mui-control-content mui-active">
+        <a href=""><img src="./images/classroom_detail_shebei.jpg" alt=""></a>
+        <a href=""><img src="./images/classroom_detail_yizhuo.jpg" alt=""></a>
+        <a href=""><img src="./images/classroom_detail_dengguang.jpg" alt=""></a>
+        <a href=""><img src="./images/classroom_detail_huanjing.jpg" alt=""></a>
+      </div>
+      <!-- 基础教程 -->
+      <div id="ost_classBasic" class="mui-slider-item mui-control-content">
+        基础教程
+      </div>
+      <!-- 进阶教程 -->
+      <div id="ost_classAdvanc" class="mui-slider-item mui-control-content">
+        进阶教程
+      </div>
+      <!-- 直播大课堂 -->
+      <div id="ost_classLive" class="mui-slider-item mui-control-content">
+        直播大课堂
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!--导航-->
+  <nav class="mui-bar mui-bar-tab" id="ost_nav">
+    <a class="mui-tab-item" id="page_index" href="./index.html">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_shouye"></use>
+      </svg>
+      <span>首页</span>
+    </a>
+    <a class="mui-tab-item" id="page_classRoom" href="./classRoom.html">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_ketang_hover"></use>
+      </svg>
+      <span>课堂</span>
+    </a>
+    <a class="mui-tab-item" id="page_mine" href="./mine.html">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_wode"></use>
+      </svg>
+      <span>我的</span>
+    </a>
+  </nav>
+
+
+  <script>
+    mui.init({
+      swipeBack: false
+    });
+    // 轮播
+    var gallery = mui('.mui-slider');
+    gallery.slider({
+      interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    // 解决 a标签 不能跳转页面问题[监听tap事件]
+    mui("body").on("tap", "a", function() {
+      document.location.href = this.href;
+    });
+  </script>
+</body>
+
+</html>

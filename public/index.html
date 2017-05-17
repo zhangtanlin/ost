@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>首页</title>
+  <link rel="stylesheet" href="./lib/dcloud-mui/dist/css/mui.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <script src="./lib/dcloud-mui/dist/js/mui.min.js"></script>
+  <script src="./fonts/iconfont.js"></script>
+</head>
+
+<body>
+
+
+  <!--头-->
+  <header class="mui-bar mui-bar-nav" id="ost_header">
+    <a id="icon-menu" class="mui-action-menu mui-icon mui-icon-back mui-pull-left"></a>
+    <a class="mui-action-back mui-btn mui-btn-link mui-pull-right">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_gengduo"></use>
+      </svg>
+    </a>
+    <h1 class="mui-title">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_logo"></use>
+      </svg>
+    </h1>
+  </header>
+
+
+  <!--中部-->
+  <div class="mui-content">
+
+    <!--轮播-->
+    <div class="mui-slider">
+      <div class="mui-slider-group">
+        <div class="mui-slider-item">
+          <a href=""><img src="images/carousel_index1.jpg" alt=""></a>
+        </div>
+        <div class="mui-slider-item">
+          <a href=""><img src="images/carousel_index2.jpg" alt=""></a>
+        </div>
+        <div class="mui-slider-item">
+          <a href=""><img src="images/carousel_index3.jpg" alt=""></a>
+        </div>
+        <div class="mui-slider-item">
+          <a href=""><img src="images/carousel_index4.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="mui-slider-indicator">
+        <div class="mui-indicator mui-active"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+      </div>
+    </div>
+
+    <!--副导航-->
+    <div class="mui-row" id="ost_indexSubnav">
+      <div class="mui-col-xs-3">
+        <a href="">
+          <svg class="icon ost_indexSubnavIcon_sc" aria-hidden="true">
+            <use xlink:href="#icon-ost_shangcheng"></use>
+          </svg>
+          <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+            <use xlink:href="#icon-ost_fontShangcheng"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="mui-col-xs-3">
+        <a href="">
+          <svg class="icon ost_indexSubnavIcon_zk" aria-hidden="true">
+            <use xlink:href="#icon-ost_zhekou"></use>
+          </svg>
+          <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+            <use xlink:href="#icon-ost_fontZhekou"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="mui-col-xs-3">
+        <a href="">
+          <svg class="icon ost_indexSubnavIcon_jm" aria-hidden="true">
+            <use xlink:href="#icon-ost_jianmian"></use>
+          </svg>
+          <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+            <use xlink:href="#icon-ost_fontJianmian"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="mui-col-xs-3">
+        <a href="">
+          <svg class="icon ost_indexSubnavIcon_zb" aria-hidden="true">
+            <use xlink:href="#icon-ost_zhoubian"></use>
+          </svg>
+          <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+            <use xlink:href="#icon-ost_fontZhoubian"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!--福利活动-->
+    <div class="mui-row" id="ost_indexFuli">
+      <div class="mui-col-xs-12">
+        <img src="./images/bannerIndex_fuli.jpg" alt="">
+      </div>
+    </div>
+
+    <!--滚动消息-->
+    <div class="mui-slider" id="ost_indexSlidMsg">
+      <div class="mui-slider-group mui-slider-loop">
+        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+        <div class="mui-slider-item mui-slider-item-duplicate">
+          <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex4.jpg">
+                <div class="mui-media-body">Color of SIP CBD</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex4.jpg">
+                <div class="mui-media-body">静静看这世界</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex4.jpg">
+                <div class="mui-media-body">45679</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--第一批轮播-->
+        <div class="mui-slider-item">
+          <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex1.jpg">
+                <div class="mui-media-body">幸福就是可以一起睡觉</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex1.jpg">
+                <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex1.jpg">
+                <div class="mui-media-body">789797，静静的喝咖啡</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--第二批轮播-->
+        <div class="mui-slider-item">
+          <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex2.jpg">
+                <div class="mui-media-body">Color of SIP CBD</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex2.jpg">
+                <div class="mui-media-body">静静看这世界</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex2.jpg">
+                <div class="mui-media-body">456dgdg</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--第三批轮播-->
+        <div class="mui-slider-item">
+          <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex3.jpg">
+                <div class="mui-media-body">Color of SIP CBD</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex3.jpg">
+                <div class="mui-media-body">静静看这世界</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex3.jpg">
+                <div class="mui-media-body">456dgdg</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--第四批轮播-->
+        <div class="mui-slider-item">
+          <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex4.jpg">
+                <div class="mui-media-body">Color of SIP CBD</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex4.jpg">
+                <div class="mui-media-body">静静看这世界</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex4.jpg">
+                <div class="mui-media-body">456dgdg</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+        <div class="mui-slider-item mui-slider-item-duplicate">
+          <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex1.jpg">
+                <div class="mui-media-body">幸福就是可以一起睡觉</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex1.jpg">
+                <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+              </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4">
+              <a href="">
+                <img class="mui-media-object" src="./images/sliderIndex1.jpg">
+                <div class="mui-media-body">dgdgdgdgdfgdfertyrrt，静静的喝咖啡</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--导航-->
+  <nav class="mui-bar mui-bar-tab" id="ost_nav">
+    <a class="mui-tab-item" id="page_index" href="./index.html">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_shouye_hover"></use>
+      </svg>
+      <span>首页</span>
+    </a>
+    <a class="mui-tab-item" id="page_classRoom" href="./classRoom.html">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_ketang"></use>
+      </svg>
+      <span>课堂</span>
+    </a>
+    <a class="mui-tab-item" id="page_mine" href="./mine.html">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ost_wode"></use>
+      </svg>
+      <span>我的</span>
+    </a>
+  </nav>
+
+
+  <script type="text/javascript">
+    // 轮播
+    var gallery = mui('.mui-slider');
+    gallery.slider({
+      interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    // 解决 a标签 不能跳转页面问题[监听tap事件]
+    mui("body").on("tap", "a", function() {
+      document.location.href = this.href;
+    });
+  </script>
+</body>
+
+</html>
