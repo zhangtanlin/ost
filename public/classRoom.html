@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>课堂</title>
@@ -14,60 +14,86 @@
 </head>
 
 <body>
+
   <div class="mui-content">
-    <!-- 选项卡 -->
-    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="ost_classTab">
-      <a class="mui-control-item mui-active" href="#ost_classFAQ">
-        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
-          <use xlink:href="#icon-ost_fontChangjianwen"></use>
-        </svg>
-      </a>
-      <a class="mui-control-item" href="#ost_classBasic">
-        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
-          <use xlink:href="#icon-ost_fontJichujiaoche"></use>
-        </svg>
-      </a>
-      <a class="mui-control-item" href="#ost_classAdvanc">
-        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
-          <use xlink:href="#icon-ost_fontJinjiejiaoch"></use>
-        </svg>
-      </a>
-      <a class="mui-control-item" href="#ost_classLive">
-        <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
-          <use xlink:href="#icon-ost_fontDaketang"></use>
-        </svg>
-      </a>
-    </div>
-    <!-- 选项卡内容 -->
-    <div class="mui-slider-group">
-      <!-- 常见问答 -->
-      <div id="ost_classFAQ" class="mui-slider-item mui-control-content mui-active">
-        <a href=""><img src="./images/classroom_detail_shebei.jpg" alt=""></a>
-        <a href=""><img src="./images/classroom_detail_yizhuo.jpg" alt=""></a>
-        <a href=""><img src="./images/classroom_detail_dengguang.jpg" alt=""></a>
-        <a href=""><img src="./images/classroom_detail_huanjing.jpg" alt=""></a>
+    <div id="ost_classRoom" class="mui-slider">
+      <!-- 选项卡盒子 -->
+      <div id="ost_classTabBox">
+        <div id="ost_classTab" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+          <a class="mui-control-item" href="#ost_classFAQ">
+            <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+              <use xlink:href="#icon-ost_fontChangjianwen"></use>
+            </svg>
+  			  </a>
+          <a class="mui-control-item" href="#ost_classBasic">
+            <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+              <use xlink:href="#icon-ost_fontJichujiaoche"></use>
+            </svg>
+  			  </a>
+          <a class="mui-control-item" href="#ost_classAdvanc">
+            <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+              <use xlink:href="#icon-ost_fontJinjiejiaoch"></use>
+            </svg>
+  			  </a>
+          <a class="mui-control-item" href="#ost_classLive">
+            <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
+              <use xlink:href="#icon-ost_fontDaketang"></use>
+            </svg>
+  			  </a>
+        </div>
+        <!-- 选项卡状态栏 -->
+        <div class="mui-slider-progress-bar mui-col-xs-3" id="ost_classTabActive"></div>
       </div>
-      <!-- 基础教程 -->
-      <div id="ost_classBasic" class="mui-slider-item mui-control-content">
-        <a href=""><img src="./images/classroom_detail_shebei.jpg" alt=""></a>
-        <a href=""><img src="./images/classroom_detail_yizhuo.jpg" alt=""></a>
-        <a href=""><img src="./images/classroom_detail_dengguang.jpg" alt=""></a>
-        <a href=""><img src="./images/classroom_detail_huanjing.jpg" alt=""></a>
-      </div>
-      <!-- 进阶教程 -->
-      <div id="ost_classAdvanc" class="mui-slider-item mui-control-content">
-        进阶教程
-      </div>
-      <!-- 直播大课堂 -->
-      <div id="ost_classLive" class="mui-slider-item mui-control-content">
-        直播大课堂
+
+      <!-- 选项卡内容 -->
+      <div class="mui-slider-group">
+        <div id="ost_classFAQ" class="mui-slider-item mui-control-content mui-active">
+          <div id="scroll1" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+              <ul class="mui-table-view mui-table-view-chevron">
+                <li class="mui-table-view-cell mui-media">
+                  <a class="mui-navigate-right" href="#account">
+                    <img class="mui-media-object mui-pull-left head-img" src="./images/">
+                    <div class="mui-media-body">Hello MUI
+                      <p class="mui-ellipsis">账号:hellomui</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="ost_classBasic" class="mui-slider-item mui-control-content">
+          <div id="scroll2" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+              <div class="mui-loading">
+                <div class="mui-spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ost_classAdvanc" class="mui-slider-item mui-control-content">
+          <div id="scroll3" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+              <div class="mui-loading">
+                <div class="mui-spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ost_classLive" class="mui-slider-item mui-control-content">
+          <div id="scroll3" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+              <div class="mui-loading">
+                <div class="mui-spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
-
-
   </div>
-
 
   <!--导航-->
   <nav class="mui-bar mui-bar-tab" id="ost_nav">
@@ -91,16 +117,56 @@
     </a>
   </nav>
 
-
   <script>
     mui.init({
       swipeBack: false
     });
-    // 解决 a标签 不能跳转页面问题[监听tap事件]
-    mui("body").on("tap", "a", function() {
-      document.location.href = this.href;
-    });
+    (function($) {
+      $('.mui-scroll-wrapper').scroll({
+        indicators: true //是否显示滚动条
+      });
+      var html2 =
+        '<img src="./images/class2/class2_detail_shebei.jpg"/><img src="./images/class2/class2_detail_yizhuo.jpg"/><img src="./images/class2/class2_detail_dengguang.jpg"/><img src="./images/class2/class2_detail_huanjing.jpg"/>';
+      var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li></ul>';
+      var html4 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第四个选项卡子项-1</li></ul>';
+      var item2 = document.getElementById('ost_classBasic');
+      var item3 = document.getElementById('ost_classAdvanc');
+      var item4 = document.getElementById('ost_classLive');
+      document.getElementById('ost_classRoom').addEventListener('slide', function(e) {
+        if (e.detail.slideNumber === 1) {
+          if (item2.querySelector('.mui-loading')) {
+            setTimeout(function() {
+              item2.querySelector('.mui-scroll').innerHTML = html2;
+            }, 500);
+          }
+        } else if (e.detail.slideNumber === 2) {
+          if (item3.querySelector('.mui-loading')) {
+            setTimeout(function() {
+              item3.querySelector('.mui-scroll').innerHTML = html3;
+            }, 500);
+          }
+        } else if (e.detail.slideNumber === 3) {
+          if (item4.querySelector('.mui-loading')) {
+            setTimeout(function() {
+              item4.querySelector('.mui-scroll').innerHTML = html4;
+            }, 500);
+          }
+        }
+      });
+      var ost_classTab = document.getElementById('ost_classTab');
+      $('.mui-input-group').on('change', 'input', function() {
+        if (this.checked) {
+          ost_classTab.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+          ost_classTabActive.setAttribute('style', ost_classTabActive.getAttribute('style'));
+        }
+      });
+      // 解决 a标签 不能跳转页面问题[监听tap事件]
+      mui("nav").on("tap", "a", function() {
+        document.location.href = this.href;
+      });
+    })(mui);
   </script>
+
 </body>
 
 </html>

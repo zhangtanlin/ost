@@ -287,7 +287,7 @@
       interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
     });
     // 解决 a标签 不能跳转页面问题[监听tap事件]
-    mui("body").on("tap", "a", function() {
+    mui("nav").on("tap", "a", function() {
       document.location.href = this.href;
     });
   </script>

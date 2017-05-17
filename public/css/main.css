@@ -135,20 +135,25 @@ html, body {
 
 
 /*课堂------------------------------------------------------------------------*/
-#ost_classTab{
-  font-size: 3rem;
-  color: #fff;
+#ost_classTabBox{
   background-color: #FF596D;
-  padding-bottom: 2px;
+}
+#ost_classTab{
+  font-size: 50px;
+  color: #fff;
 }
 #ost_classTab .mui-active{
-  color: #fff;
-  border-color: #fff;
+    color: #fff;
 }
-#ost_classBasic{
-  padding-bottom: 50px;
+#ost_classTabActive{
+  position: relative;
+  top: -2px;
+  background-color: #fff;
+}
+#ost_classFAQ,#ost_classBasic,#ost_classAdvanc,#ost_classLive{
+  background-color: white;
+  min-height: 215px;
 }
 #ost_classBasic img{
   width:100%;
-  float: left;
 }
