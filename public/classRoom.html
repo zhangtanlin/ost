@@ -11,11 +11,6 @@
   <link rel="stylesheet" href="./css/main.min.css">
   <script src="./lib/dcloud-mui/dist/js/mui.min.js"></script>
   <script src="./fonts/iconfont.js"></script>
-  <script type="text/javascript">
-    mui.init({
-      swipeBack: false
-    });
-  </script>
 </head>
 
 <body>
@@ -160,7 +155,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -189,10 +183,10 @@
   <script>
     (function($) {
       // 设置选项卡内容的高度
-      document.getElementById("ost_classFAQ").style.minHeight = window.screen.availHeight - 250 + "px";
-      document.getElementById("ost_classBasic").style.minHeight = window.screen.availHeight - 250 + "px";
-      document.getElementById("ost_classAdvanc").style.minHeight = window.screen.availHeight - 250 + "px";
-      document.getElementById("ost_classLive").style.minHeight = window.screen.availHeight - 250 + "px";
+      document.getElementById("ost_classFAQ").style.minHeight = window.screen.availHeight - 110 + "px";
+      document.getElementById("ost_classBasic").style.minHeight = window.screen.availHeight - 110 + "px";
+      document.getElementById("ost_classAdvanc").style.minHeight = window.screen.availHeight - 110 + "px";
+      document.getElementById("ost_classLive").style.minHeight = window.screen.availHeight - 110 + "px";
       // 选项卡内容加载
       $('.mui-scroll-wrapper').scroll({
         indicators: true //是否显示滚动条
