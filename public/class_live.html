@@ -9,38 +9,43 @@
   <title>课堂</title>
   <link rel="stylesheet" href="./lib/dcloud-mui/dist/css/mui.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
-  <script src="./lib/dcloud-mui/dist/js/mui.min.js"></script>
-  <script src="./fonts/iconfont.js"></script>
+  <script src="./lib/dcloud-mui/dist/js/mui.min.js" charset="utf-8"></script>
+  <script src="./fonts/iconfont.js" charset="utf-8"></script>
+  <script src="./js/ost.js" charset="utf-8"></script>
 </head>
 
 <body>
 
   <div class="mui-content">
     <div id="ost_classRoom" class="mui-slider">
+
       <!-- 选项卡盒子 -->
       <div id="ost_classTabBox">
+
+        <!-- 选项卡导航 -->
         <div id="ost_classTab" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-          <a class="mui-control-item" href="#ost_classFAQ">
+          <a class="mui-control-item" href="#class_FAQ.html">
             <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
               <use xlink:href="#icon-ost_fontChangjianwen"></use>
             </svg>
   			  </a>
-          <a class="mui-control-item" href="#ost_classBasic">
+          <a class="mui-control-item" href="#class_basic.html">
             <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
               <use xlink:href="#icon-ost_fontJichujiaoche"></use>
             </svg>
   			  </a>
-          <a class="mui-control-item" href="#ost_classAdvanc">
+          <a class="mui-control-item" href="#class_advance.html">
             <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
               <use xlink:href="#icon-ost_fontJinjiejiaoch"></use>
             </svg>
   			  </a>
-          <a class="mui-control-item" href="#ost_classLive">
+          <a class="mui-control-item" href="#class_Live.html">
             <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
               <use xlink:href="#icon-ost_fontDaketang"></use>
             </svg>
   			  </a>
         </div>
+
         <!-- 选项卡状态栏 -->
         <div class="mui-slider-progress-bar mui-col-xs-3" id="ost_classTabActive"></div>
       </div>
@@ -166,7 +171,7 @@
       </svg>
       <span>首页</span>
     </a>
-    <a class="mui-tab-item" id="page_classRoom" href="./classRoom.html">
+    <a class="mui-tab-item" id="page_classRoom" href="./class_FAQ.html">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-ost_ketang_hover"></use>
       </svg>

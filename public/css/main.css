@@ -118,6 +118,12 @@ html, body {
   top: -2px;
   background-color: #fff;
 }
+#ost_classFAQ>ul{
+  margin-bottom: 60px;
+}
+#ost_classFAQ .mui-media-body{
+  font-size: 14px;
+}
 #ost_classBasic,#ost_classAdvanc{
   zoom: 1;
 }

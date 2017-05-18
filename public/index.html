@@ -9,8 +9,8 @@
   <title>首页</title>
   <link rel="stylesheet" href="./lib/dcloud-mui/dist/css/mui.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
-  <script src="./lib/dcloud-mui/dist/js/mui.min.js"></script>
-  <script src="./fonts/iconfont.js"></script>
+  <script src="./lib/dcloud-mui/dist/js/mui.min.js" charset="utf-8"></script>
+  <script src="./fonts/iconfont.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -262,17 +262,7 @@
   </nav>
 
 
-  <script type="text/javascript">
-    // 轮播
-    var gallery = mui('.mui-slider');
-    gallery.slider({
-      interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
-    });
-    // 解决 a标签 不能跳转页面问题[监听tap事件]
-    mui("nav").on("tap", "a", function() {
-      document.location.href = this.href;
-    });
-  </script>
+  <script src="./js/ost.js" charset="utf-8"></script>
 </body>
 
 </html>

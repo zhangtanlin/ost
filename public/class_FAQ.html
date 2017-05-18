@@ -9,16 +9,19 @@
   <title>课堂</title>
   <link rel="stylesheet" href="./lib/dcloud-mui/dist/css/mui.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
-  <script src="./lib/dcloud-mui/dist/js/mui.min.js"></script>
-  <script src="./fonts/iconfont.js"></script>
+  <script src="./lib/dcloud-mui/dist/js/mui.min.js" charset="utf-8"></script>
+  <script src="./fonts/iconfont.js" charset="utf-8"></script>
 </head>
 
 <body>
 
   <div class="mui-content">
     <div id="ost_classRoom" class="mui-slider">
+
       <!-- 选项卡盒子 -->
       <div id="ost_classTabBox">
+
+        <!-- 选项卡导航 -->
         <div id="ost_classTab" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
           <a class="mui-control-item" href="#class_FAQ.html">
             <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
@@ -30,131 +33,97 @@
               <use xlink:href="#icon-ost_fontJichujiaoche"></use>
             </svg>
   			  </a>
-          <a class="mui-control-item" href="#ost_classAdvanc">
+          <a class="mui-control-item" href="#class_advance.html">
             <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
               <use xlink:href="#icon-ost_fontJinjiejiaoch"></use>
             </svg>
   			  </a>
-          <a class="mui-control-item" href="#ost_classLive">
+          <a class="mui-control-item" href="#class_Live.html">
             <svg class="icon ost_indexSubnavTitle" aria-hidden="true">
               <use xlink:href="#icon-ost_fontDaketang"></use>
             </svg>
   			  </a>
         </div>
+
         <!-- 选项卡状态栏 -->
         <div class="mui-slider-progress-bar mui-col-xs-3" id="ost_classTabActive"></div>
       </div>
 
       <!-- 选项卡内容 -->
-      <div class="mui-slider-group">
-        <div id="ost_classFAQ" class="mui-slider-item mui-control-content mui-active">
-          <div id="scroll1" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-              <ul class="mui-table-view mui-table-view-chevron">
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
-                    <div class="mui-media-body">什么叫做保底工资？
-                      <p class="mui-ellipsis">主播的保底工资到底是怎么样计算？</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ2.png">
-                    <div class="mui-media-body">什么叫做有效时长？
-                      <p class="mui-ellipsis">有效时长主播应该怎么样来计算？</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ3.png">
-                    <div class="mui-media-body">怎么样才能成为一名优秀的主播？
-                      <p class="mui-ellipsis">……</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ4.png">
-                    <div class="mui-media-body">OST娱乐可以帮助你做些什么？
-                      <p class="mui-ellipsis">你想了解……</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ5.png">
-                    <div class="mui-media-body">OST娱乐的结算规则是什么？
-                      <p class="mui-ellipsis">到底应该怎么样来结算？</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
-                    <div class="mui-media-body">为什么选择OST娱乐？
-                      <p class="mui-ellipsis">……</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
-                    <div class="mui-media-body">为什么选择OST娱乐？
-                      <p class="mui-ellipsis">……</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
-                    <div class="mui-media-body">为什么选择OST娱乐？
-                      <p class="mui-ellipsis">……</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                  <a class="mui-navigate-right" href="#account">
-                    <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
-                    <div class="mui-media-body">为什么选择OST娱乐？
-                      <p class="mui-ellipsis">……</p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+      <ul class="mui-table-view mui-table-view-chevron" id="ost_classFAQ">
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
+            <div class="mui-media-body">什么叫做保底工资？
+              <p class="mui-ellipsis">主播的保底工资到底是怎么样计算？</p>
             </div>
-          </div>
-        </div>
-        <div id="ost_classBasic" class="mui-slider-item mui-control-content">
-          <div id="scroll2" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-              <div class="mui-loading">
-                <div class="mui-spinner"></div>
-              </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ2.png">
+            <div class="mui-media-body">什么叫做有效时长？
+              <p class="mui-ellipsis">有效时长主播应该怎么样来计算？</p>
             </div>
-          </div>
-        </div>
-        <div id="ost_classAdvanc" class="mui-slider-item mui-control-content">
-          <div id="scroll3" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-              <div class="mui-loading">
-                <div class="mui-spinner"></div>
-              </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ3.png">
+            <div class="mui-media-body">怎么样才能成为一名优秀的主播？
+              <p class="mui-ellipsis">……</p>
             </div>
-          </div>
-        </div>
-        <div id="ost_classLive" class="mui-slider-item mui-control-content">
-          <div id="scroll3" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-              <div class="mui-loading">
-                <div class="mui-spinner"></div>
-              </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ4.png">
+            <div class="mui-media-body">OST娱乐可以帮助你做些什么？
+              <p class="mui-ellipsis">你想了解……</p>
             </div>
-          </div>
-        </div>
-      </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ5.png">
+            <div class="mui-media-body">OST娱乐的结算规则是什么？
+              <p class="mui-ellipsis">到底应该怎么样来结算？</p>
+            </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
+            <div class="mui-media-body">为什么选择OST娱乐？
+              <p class="mui-ellipsis">……</p>
+            </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
+            <div class="mui-media-body">为什么选择OST娱乐？
+              <p class="mui-ellipsis">……</p>
+            </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
+            <div class="mui-media-body">为什么选择OST娱乐？
+              <p class="mui-ellipsis">……</p>
+            </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class="mui-navigate-right" href="#account">
+            <img class="mui-media-object mui-pull-left head-img" src="./images/class1/FAQ1.png">
+            <div class="mui-media-body">为什么选择OST娱乐？
+              <p class="mui-ellipsis">……</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -166,7 +135,7 @@
       </svg>
       <span>首页</span>
     </a>
-    <a class="mui-tab-item" id="page_classRoom" href="./classRoom.html">
+    <a class="mui-tab-item" id="page_classRoom" href="./class_FAQ.html">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-ost_ketang_hover"></use>
       </svg>
@@ -180,17 +149,12 @@
     </a>
   </nav>
 
-  <script>
-    (function($) {
-      // 设置选项卡内容的高度
-      document.getElementById("ost_classFAQ").style.minHeight = window.screen.availHeight - 110 + "px";
-      // 解决 a标签 不能跳转页面问题[监听tap事件]
-      mui("nav").on("tap", "a", function() {
-        document.location.href = this.href;
-      });
-    })(mui);
-  </script>
 
+  <script src="./js/ost.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    // 课堂选项卡内容的高度填充全屏
+    document.getElementById("ost_classFAQ").style.minHeight = window.screen.availHeight - 110 + "px";
+  </script>
 </body>
 
 </html>
