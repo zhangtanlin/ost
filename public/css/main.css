@@ -152,8 +152,11 @@ html, body {
 }
 #ost_classFAQ,#ost_classBasic,#ost_classAdvanc,#ost_classLive{
   background-color: white;
-  min-height: 215px;
+  /*min-height: 450px;*/
 }
 #ost_classBasic img{
   width:100%;
+}
+#ost_classLive ul>li>a{
+  text-align: center;
 }
